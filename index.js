@@ -11,6 +11,9 @@ require('./database');
 const path = require('path');
 app.use(express.static(path.join(__dirname, 'public')));
 
+// studentRouter is DataBase name
+const studentRouter = require('./routes/api/api');
+app.use('/api', studentRouter)
 
 // Listen
 app.listen(PORT, () => console.log(`Server is runnung on port ${PORT}`));
