@@ -13,8 +13,8 @@ router.get('/', async (req, res) => {
 })
 
 // Getting One
-router.get('/:id', getSubscriber, (req, res) => {
-  res.json(res.subscriber)
+router.get('/:id', getStudent, (req, res) => {
+  res.json(res.student)
 })
 
 module.exports = router;
