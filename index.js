@@ -11,7 +11,7 @@ require('./database');
 
 // studentRouter is DataBase name
 const studentRouter = require('./routes/api/students');
-app.use('/api/students', studentRouter)
+app.use('/students', studentRouter)
 
 
 // Path html
