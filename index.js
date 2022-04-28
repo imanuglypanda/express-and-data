@@ -18,6 +18,9 @@ app.use('/students', studentRouter)
 const path = require('path');
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.get('/', (req, res) => {
+    res.sendFile('./public/index.html', { root: __dirname });
+});
 
 // Listen
 app.listen(PORT, () => console.log(`Server is runnung on port ${PORT}`));
